@@ -48,7 +48,7 @@ const ColorModeSwitch = () => {
     dayBtn.current.style.pointerEvents = "none";
     setTimeout(() => {
       nightBtn.current.style.pointerEvents = "all";
-    }, 1000);
+    }, 200);
     setColorMode("dark");
   };
   const nightClick = () => {
@@ -73,7 +73,7 @@ const ColorModeSwitch = () => {
     nightBtn.current.style.pointerEvents = "none";
     setTimeout(() => {
       dayBtn.current.style.pointerEvents = "all";
-    }, 1000);
+    }, 200);
     setColorMode("light");
   };
   return (

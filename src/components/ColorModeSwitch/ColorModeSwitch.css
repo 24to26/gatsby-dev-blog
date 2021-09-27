@@ -19,7 +19,7 @@ svg {
   border-radius: 100px;
   background: #224f6d;
   border: 6px solid #cad4d8;
-  transition: all 1s ease-in-out;
+  transition: all 0.2s ease-in-out;
   box-sizing: content-box;
 }
 
@@ -32,13 +32,13 @@ svg {
 
 #sun,
 #moon {
-  transition: all 1s ease-in-out;
+  transition: all 0.2s ease-in-out;
   transform-origin: center center;
 }
 
 #cloud,
 .star {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 #moon,
