@@ -1,0 +1,79 @@
+svg {
+  transform: scale(0.24);
+  z-index: 2;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: top left;
+  top: 2px;
+  left: 2px;
+}
+
+#day,
+#night {
+  width: 80px;
+  height: 35px;
+  background: white;
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 100px;
+  background: #224f6d;
+  border: 6px solid #cad4d8;
+  transition: all 1s ease-in-out;
+  box-sizing: content-box;
+}
+
+#day {
+  pointer-events: none;
+}
+#night {
+  pointer-events: all;
+}
+
+#sun,
+#moon {
+  transition: all 1s ease-in-out;
+  transform-origin: center center;
+}
+
+#cloud,
+.star {
+  transition: all 0.5s ease-in-out;
+}
+
+#moon,
+.star {
+  opacity: 1;
+}
+
+#sun,
+#cloud {
+  opacity: 0;
+}
+
+#sun,
+#cloud,
+#moon {
+  transform: translateX(15px);
+}
+.star {
+  transform: translate(35px, -5px);
+}
+#moon {
+  transform: translateX(-157px);
+}
+
+.star.off {
+  opacity: 0;
+}
+
+@media (max-width: 720px) {
+  /* #day,
+  #night {
+    width: 320px;
+    height: 150px;
+  }
+  svg {
+    transform: scale(0.95);
+  } */
+}
